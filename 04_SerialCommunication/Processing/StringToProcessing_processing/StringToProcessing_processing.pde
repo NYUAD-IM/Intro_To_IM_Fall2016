@@ -11,7 +11,7 @@ void setup() {
   String portName = "/dev/tty.usbserial-DN01EZEP";
 
   myPort = new Serial(this, portName, 9600);
-  myPort.bufferUntil('\n');
+  myPort.bufferUntil('\n');  //Reads until endline character. This works well when we "Serial.println" from Arduino.
 }
 
 void draw() {
